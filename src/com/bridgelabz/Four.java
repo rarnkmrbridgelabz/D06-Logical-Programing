@@ -1,0 +1,19 @@
+package com.bridgelabz;
+
+import java.util.Scanner;
+
+public class Four {
+	public static void main(String[] args) {
+		System.out.println("Enter any number:");
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+		int r, reverse = 0;
+		while (num != 0) {
+			r = num % 10;
+			reverse = (reverse * 10) + r;
+			num = num / 10;
+		}
+		System.out.println("Reversed number is:" + reverse);
+		scanner.close();
+	}
+}
